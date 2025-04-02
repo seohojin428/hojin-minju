@@ -77,13 +77,14 @@
     .petal {
       position: fixed;
       top: -10px;
-      background: url('https://i.ibb.co/yPwZ5Vn/petal.png') no-repeat center;
+      background: url('https://cdn-icons-png.flaticon.com/512/616/616408.png') no-repeat center;
       background-size: 20px 20px;
       width: 20px;
       height: 20px;
       opacity: 0.8;
       animation: fall linear infinite;
       z-index: 0;
+      pointer-events: none;
     }
     @keyframes fall {
       0% {
@@ -99,7 +100,7 @@
 </head>
 <body>
   <script>
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < 25; i++) {
       const petal = document.createElement('div');
       petal.className = 'petal';
       petal.style.left = Math.random() * 100 + 'vw';
